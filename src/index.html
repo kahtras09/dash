@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demo HTML App</h1>
+
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your name">
+
+    <button onclick="displayGreeting()">Say Hello</button>
+
+    <p id="greeting"></p>
+
+    <script>
+        function displayGreeting() {
+            var name = document.getElementById("name").value;
+            var greeting = "Hello, " + name + "!";
+            document.getElementById("greeting").innerText = greeting;
+        }
+    </script>
+
+</body>
+</html>
